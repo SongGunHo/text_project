@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <tr>
+            <th>이메일</th>
+            <th>비빌번호</th>
+            <th>이름</th>
+            <th>나이</th>
+            <th>전화번호</th>
+        </tr>
+        <tr th: onblur="login${login}">
+            <td th: text="${login.memberEmail}"></td>
+            <td th: text="${login.memberPassword}"></td>
+            <td th: text="${login.memberName}"></td>
+            <td th: text="${login.memberAge}"></td>
+            <td th: text="${login.memberMobile}"></td>
+        </tr>
+        <a href="/member/detail">아이디 조회</a>
+    </div>
+</body>
+</html>
